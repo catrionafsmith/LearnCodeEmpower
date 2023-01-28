@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>LearnCodeEmpower Volunteer Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="d-flex flex-column h-100">
+    
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">LearnCodeEmpower</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Learn</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Volunteer</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+    </header>
+    
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
+        <div class="container">
+            <h1 class="mt-5">Volunteer</h1>
+            <p class="lead">On this page we plan to have an interactive section where a user can select from a couple of options, and then through JavaScript, some options of volunteering projects would appear below. (These options would be selected by the JavaScript logic from a csv file which we have populated with volunteering projects.)
+                A few options are included below for how the user might select options.
+            </p>
+            <div class="mb-3">
+                <label for="exampleSelect" class="form-label">Select menu</label>
+                <select class="form-select" id="exampleSelect">
+                  <option selected="">Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="exampleSelect" class="form-label">Select menu</label>
+                <select class="form-select" id="exampleSelect">
+                  <option selected="">Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="dropdown-center">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Centered dropdown
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Action two</a></li>
+                  <li><a class="dropdown-item" href="#">Action three</a></li>
+                </ul>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Default radio
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Default checked radio
+                </label>
+            </div>
+        </div>
+        
+    </main>
+    
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+        <span class="text-muted">Created by Team Lime.</span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</body>
+</html>
