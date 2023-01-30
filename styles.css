@@ -6,6 +6,10 @@ main > .container {
     padding: 60px 15px 0;
   }
 
+  /* code for image at the top of cards (this is .card-img-top1, as otherwise the changes to the .card-img-top beneath also apply to this page) */
+  .card-img-top1 {
+    height: 40px; /* adjust this value as needed */
+  }
 
 /* Code for dropdowns - is it all needed? */
 .dropdown-menu {
@@ -86,4 +90,43 @@ main > .container {
   
   .w-600px {
     width: 600px;
+  }
+
+  /*for volunteer*/
+  #selection_card {    
+    box-shadow: none;
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  #selection_card_subtitle {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    text-align: justify;
+  }
+
+  #card_group {
+    padding-top: 10px;
+    padding-bottom: 100px;
+  }
+
+  #result_id_div {    
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+
+  #result_title {
+    text-align:center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 5rem;
+    border-bottom: 5px solid #000;
+    display: inline-block;    
+  }
+
+  .card-img-top {
+    height: 260px; /* adjust this value as needed */
   }

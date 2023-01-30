@@ -37,53 +37,188 @@
     
     <!-- Begin page content -->
     <main class="flex-shrink-0">
+        <!-- Begin selection of volunteer -->
         <div class="container">
-            <h1 class="mt-5">Volunteer</h1>
-            <p class="lead">On this page we plan to have an interactive section where a user can select from a couple of options, and then through JavaScript, some options of volunteering projects would appear below. (These options would be selected by the JavaScript logic from a csv file which we have populated with volunteering projects.)
-                A few options are included below for how the user might select options.
-            </p>
-            <div class="mb-3">
-                <label for="exampleSelect" class="form-label">Select menu</label>
-                <select class="form-select" id="exampleSelect">
-                  <option selected="">Open this select menu</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-            </div>
-            <div class="mb-3">
-                <label for="exampleSelect" class="form-label">Select menu</label>
-                <select class="form-select" id="exampleSelect">
-                  <option selected="">Open this select menu</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-            </div>
-            <div class="dropdown-center">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Centered dropdown
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Action two</a></li>
-                  <li><a class="dropdown-item" href="#">Action three</a></li>
-                </ul>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                  Default radio
-                </label>
+          <div class="row justify-content-center" >
+            <div class="col-lg-8">
+              <div class="card my-5" id="selection_card">
+                <div class="card-body" >
+                  <h1 class="card-title mt-5">Volunteer</h1>
+                  <p class="card-text lead" id="selection_card_subtitle">On this page we plan to have an interactive section where a user can select from a couple of options, and then through JavaScript, some options of volunteering projects would appear below. (These options would be selected by the JavaScript logic from a csv file which we have populated with volunteering projects.)
+                    A few options are included below for how the user might select options.</p>
+                  
+                  <!--start the selection here-->
+                  <h5 class="card-title mt-5">Start Here...</h5>
+                  
+                  <form class="row g-3 needs-validation" novalidate>
+                    <!-- Select your level of programming -->
+                    <div class="mb-3">
+                      <label for="exampleSelect" class="form-label">Select your level of programming</label>
+                      <select class="form-select" id="exampleSelect">
+                        <option selected="">Beginner</option>
+                        <option value="1">Intermediate</option>
+                        <option value="2">Advanced</option>                  
+                      </select>
+                    </div>
+                    <!-- Select your skills -->
+                    <div class="mb-3">
+                      <label for="exampleSelect" class="form-label">Select your skills</label>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="web" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Web programming (HTML, CSS, JavaScript)
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="software" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Software Engineer (Python, Java, C#)
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="ai" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          AI and Machine learning
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="others" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Others
+                        </label>
+                      </div>
+                    </div>
+                    <!-- Select type of volunteer you're interest in -->
+                    <div class="mb-3">
+                      <label for="exampleSelect" class="form-label">Select the type of volunteer you are interest in</label>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="project" checked>
+                        <label class="form-check-label" for="project">
+                          Project
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="tutor">
+                        <label class="form-check-label" for="tutor">
+                          Tutoring
+                        </label>
+                      </div>
+                    </div>
+                    <!-- Agree terms and condition -->
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                          Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                          You must agree before submitting.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Submit -->
+                    <div class="col-12">              
+                      <input class="btn btn-primary" type="submit" id="submit-btn" value="Submit"/>
+                    </div>  
+                  </form> 
+
+
+                  <!--end selection-->
+                  
+                </div>
               </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                <label class="form-check-label" for="flexRadioDefault2">
-                  Default checked radio
-                </label>
             </div>
+          </div>
+          
+
+          <article class="entry-wraper mb-50">
+            <div class="excerpt mb-30">
+            
+          </div>
+          </article>       
+          </div>
+          <!-- End selection of volunteer --> 
+
+
+        <!-- Begin Result of volunteer -->
+        <div class="container"> 
+          
+          <!--this div is for displaying projects-->         
+          <div class="content" id="content" style="display:none;">
+            <div id="result_id_div">
+              <h2 class="card-title mt-5" id="result_title" >Start Your Project</h2>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="card_group">              
+               <!--card 1-->
+               <div class="col">
+                <div class="card h-100">
+                  <img src="img\volunteer_codeclubteaching.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <a href="https://codefirstgirls.com/courses/moocs/#CHALLENGES" class="btn btn-primary">Go somewhere</a>
+                  </div>                 
+                </div>
+              </div>
+
+               <!--card 2-->
+               <div class="col">
+                <div class="card h-100">
+                  <img src="img\sta.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <a href="https://codefirstgirls.com/courses/moocs/#CHALLENGES" class="btn btn-primary">Go somewhere</a>
+                  </div>                  
+                </div>
+              </div>
+
+               <!--card 3-->
+               <div class="col">
+                <div class="card h-100">
+                  <img src="img\volunteer_mentoring.jpg" class="card-img-top" alt="..." >
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <a href="https://codefirstgirls.com/courses/moocs/#CHALLENGES" class="btn btn-primary">Go somewhere</a>
+                  </div>                  
+                </div>
+              </div>
+
+            </div> <!--card group-->
+          </div>
+          <!-- end this div is for displaying projects-->
+
+
+          <!-- end this div is for displaying tutoring-->
+          <div class="content" id="content2" style="display:none;">
+            <!--header-->
+            <div id="result_id_div">
+              <h2 class="card-title mt-5" id="result_title" >Start Your Tutoring</h2>
+            </div>
+            <!--card group-->
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="card_group">              
+              <!--card 1-->
+              <div class="col">
+               <div class="card h-100">
+                 <img src="img\volunteer_codeclubteaching.jpg" class="card-img-top" alt="...">
+                 <div class="card-body">
+                   <h5 class="card-title">Card title</h5>
+                   <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                   <a href="https://codefirstgirls.com/courses/moocs/#CHALLENGES" class="btn btn-primary">Go somewhere</a>
+                 </div>                 
+               </div>
+             </div>
+            </div>
+          </div>
+          <!--card group-->
+          <!-- end this div is for displaying tutoring-->
         </div>
-        
+        <!-- End Result of volunteer -->
+
+      
+
+
     </main>
     
     <footer class="footer mt-auto py-3 bg-light">
@@ -92,6 +227,6 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
