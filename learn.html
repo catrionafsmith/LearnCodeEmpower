@@ -39,7 +39,25 @@
         <div class="container">
         <h1 class="mt-5">Learn</h1>
         <p class="lead">Check out the courses we recommend!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda enim nulla nemo sequi pariatur excepturi minus voluptate reiciendis necessitatibus eaque qui debitis, provident consequatur dolores accusantium officia ipsum, aliquam cumque.</p>
+        <p>We intend for this page to have cards displaying info and links to free courses that the user can take part in. 
+          Further improvements to this page: </p>
+          <ul>
+            <li>
+              Creating a list of courses, with a description and a link for each, so that this page is functional
+            </li>
+            <li>
+              Animating the cards with a hover effect so that they 'pop' when you hover over them
+            </li>
+            <li>
+              Adding filter buttons so that the user can filter for the type of courses that they're interested in (as per <a href="https://scrimba.com/allcourses?topic=css">scrimbas's website</a>)
+            </li>
+            <li>
+              Adding a different image to the top of each type of course. e.g. Blue image for CSS, Red image for HTML.(Again a similar idea to Scrimba's website above)
+            </li>
+            <li>
+              Put the js (currently on the bottom of the learn.html page) into the script.js file/figure out how to get this js code to act on all the pages if it's in the script.js file :) 
+            </li>
+          </ul>
         
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
@@ -48,7 +66,7 @@
                   HTML
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Example Card title 1</h5>
                   <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
@@ -58,36 +76,18 @@
               <div class="card">
                 <img src="example.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Example Card title 2</h5>
                   <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card">
-                <img src="example.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="example.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
+           
+            
           </div>
         </div>
     </main>
-    
+
     <!-- Begin footer -->
     <footer class="footer mt-auto py-3 bg-light">
         <div class="container">
@@ -95,6 +95,36 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script>
+      const learnCards = document.querySelector(".row")
 
+      function createCard([img, title, description, link]) {
+          let code = `
+              <div class="col">
+                  <div class="card">
+                      <img src="${img}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <h5 class="card-title">${title}</h5>
+                          <p class="card-text">${description}</p>
+                          <a href="${link}" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                  </div>
+              </div>
+
+
+          `;
+          learnCards.innerHTML += code;
+      }
+
+      let item1 = ["example.png", "Codecademy HTML Course", "This course teaches you how to make HTML from scratch", "https://www.codecademy.com/learn/learn-html"]
+      let item2 = ["example.png", "Codecademy CSS Course", "This course teaches you how to make CSS on your own", "https://www.codecademy.com/learn/learn-css"]
+      let item3 = ["example.png", "FreeCodeCamp HTML Course", "This course teaches you how to make HTML from scratch", "https://www.freecodecamp.org/news/learn-html-beginners-course/"]
+      let item4 = ["example.png", "FreeCodeCamp CSS Course", "This course teaches you how to make CSS on your own", "https://www.freecodecamp.org/news/learn-css-in-11-hours/"]
+
+      createCard(item1)
+      createCard(item2)
+      createCard(item3)
+      createCard(item4)
+    </script>
 </body>
 </html>
