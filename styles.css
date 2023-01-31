@@ -1,6 +1,13 @@
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+}
 
 main > .container {
     padding: 60px 15px 0;
