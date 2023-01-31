@@ -11,6 +11,14 @@ main > .container {
     height: 40px; /* adjust this value as needed */
   }
 
+  /* Hover effect for Learn cards - do we want to keep? */
+  .learnCard {
+    transition: 0.3s;
+  }
+  .learnCard:hover {
+      transform: scale(1.1);
+    }
+
 /* Code for dropdowns - is it all needed? */
 .dropdown-menu {
     margin: 4rem auto;
