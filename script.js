@@ -1,28 +1,35 @@
-// volunteer page, click botton event
-// document.addEventListener("DOMContentLoaded", function(){
-//     var submitBtn = document.getElementById("submit-btn");
-//     var contentDiv = document.getElementById("content");
-//     submitBtn.addEventListener("click", function(event){
-//         event.preventDefault();
-//         contentDiv.style.display = "block";
-//     });
-// });
-
-
 //  Functionality of form on Volunteer page
+// 1. by pressing submit, show the project or tutoring project
+// 2. check the terms and condition
 document.addEventListener("DOMContentLoaded", function(){
     var submitBtn = document.getElementById("submit-btn");
     var contentDiv = document.getElementById("content");
     var contentDiv2 = document.getElementById("content2");
     submitBtn.addEventListener("click", function(event){
         event.preventDefault();
-        var selectedValue = document.querySelector('input[name="flexRadioDefault"]:checked').id;        
-        if(selectedValue == "project") {
-            contentDiv.style.display = "block";
-            contentDiv2.style.display = "none";
-        } else if(selectedValue == "tutor") {
-            contentDiv2.style.display = "block";
-            contentDiv.style.display = "none";
+        // get the id for project or tutoring
+        var selectedValue = document.querySelector('input[name="flexRadioDefault"]:checked').id; 
+        // check agree and terms codition, get the button is checked or not
+        var invalidCheck = document.querySelector("#invalidCheck").checked;
+        var invalidFeedback = document.querySelector(".invalid-feedback");        
+        
+        // if the agree and terms is not checked, show invalid feedback
+        if (!invalidCheck) {
+            invalidFeedback.style.display = "block";            
+            return false;
+          } else {
+            // else, don't show the invalid feedback
+            invalidFeedback.style.display = "none";
+            // show the project result
+            if(selectedValue == "project") {
+                contentDiv.style.display = "block";
+                contentDiv2.style.display = "none";
+            // show the tutor result
+            } else if(selectedValue == "tutor") {
+                contentDiv2.style.display = "block";
+                contentDiv.style.display = "none";
+            }
+            return true;
         }
     });
 });
