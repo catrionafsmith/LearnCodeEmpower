@@ -1,6 +1,4 @@
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
+/* CSS for fonts and padding. N.B. Also need google font link in the head of each page to ensure that the correct font is used */
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -13,20 +11,60 @@ main > .container {
     padding: 60px 15px 0;
   }
 
-  /* code for image at the top of cards (this is .card-img-top1, as otherwise the changes to the .card-img-top beneath also apply to this page) */
-  .card-img-top1 {
-    height: 40px; /* adjust this value as needed */
+/* code for image at the top of cards (this is .card-img-top1, as otherwise the changes to the .card-img-top beneath also apply to this page) */
+.card-img-top1 {
+  height: 40px; /* adjust this value as needed */
+}
+
+/* Hover effect for Learn cards - do we want to keep? */
+.learnCard {
+  transition: 0.3s;
+}
+.learnCard:hover {
+    transform: scale(1.1);
   }
 
-  /* Hover effect for Learn cards - do we want to keep? */
-  .learnCard {
-    transition: 0.3s;
-  }
-  .learnCard:hover {
-      transform: scale(1.1);
-    }
+/*for volunteer*/
+#selection_card {    
+  box-shadow: none;
+  background-color: transparent;
+  border-color: transparent;
+}
 
-/* Code for dropdowns - is it all needed? */
+#selection_card_subtitle {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  text-align: justify;
+}
+
+#card_group {
+  padding-top: 10px;
+  padding-bottom: 100px;
+}
+
+#result_id_div {    
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+#result_title {
+  text-align:center;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 5rem;
+  border-bottom: 5px solid #000;
+  display: inline-block;    
+}
+
+.card-img-top {
+  height: 260px; /* adjust this value as needed */
+}
+
+
+/* Code for dropdowns(?) - is it all needed? */
 .dropdown-menu {
     margin: 4rem auto;
   }
@@ -51,45 +89,11 @@ main > .container {
     color: var(--bs-blue);
     background-color: var(--bs-light);
   }
-  
-  .cal-month,
-  .cal-days,
-  .cal-weekdays {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    align-items: center;
-  }
-  .cal-month-name {
-    grid-column-start: 2;
-    grid-column-end: 7;
-    text-align: center;
-  }
-  .cal-weekday,
-  .cal-btn {
-    display: flex;
-    flex-shrink: 0;
-    align-items: center;
-    justify-content: center;
-    height: 3rem;
-    padding: 0;
-  }
-  .cal-btn:not([disabled]) {
-    font-weight: 500;
-  }
-  .cal-btn:hover,
-  .cal-btn:focus {
-    background-color: rgba(0, 0, 0, .05);
-  }
-  .cal-btn[disabled] {
-    border: 0;
-    opacity: .5;
-  }
-  
+    
   .form-control-dark {
     background-color: rgba(255, 255, 255, .05);
     border-color: rgba(255, 255, 255, .15);
   }
-  
   
   .w-220px {
     width: 220px;
@@ -107,41 +111,4 @@ main > .container {
     width: 600px;
   }
 
-  /*for volunteer*/
-  #selection_card {    
-    box-shadow: none;
-    background-color: transparent;
-    border-color: transparent;
-  }
-
-  #selection_card_subtitle {
-    padding-top: 20px;
-    padding-bottom: 15px;
-    text-align: justify;
-  }
-
-  #card_group {
-    padding-top: 10px;
-    padding-bottom: 100px;
-  }
-
-  #result_id_div {    
-    display: flex;
-    justify-content: center;
-    padding-bottom: 30px;
-  }
-
-  #result_title {
-    text-align:center;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-top: 5rem;
-    border-bottom: 5px solid #000;
-    display: inline-block;    
-  }
-
-  .card-img-top {
-    height: 260px; /* adjust this value as needed */
-  }
+  
