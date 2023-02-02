@@ -24,6 +24,12 @@ main > .container {
     transform: scale(1.1);
   }
 
+  /* For chatbot */
+.chatbot {
+  width: 10rem;
+}
+
+
 /*for volunteer*/
 #selection_card {    
   box-shadow: none;
