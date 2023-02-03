@@ -5,34 +5,50 @@ document.addEventListener("DOMContentLoaded", function(){
     var submitBtn = document.getElementById("submit-btn");
     var contentDiv = document.getElementById("content");
     var contentDiv2 = document.getElementById("content2");
+    var select = document.getElementById("exampleSelect");
+
     submitBtn.addEventListener("click", function(event){
         event.preventDefault();
         // get the id for project or tutoring
         var selectedValue = document.querySelector('input[name="flexRadioDefault"]:checked').id; 
         // check agree and terms codition, get the button is checked or not
         var invalidCheck = document.querySelector("#invalidCheck").checked;
-        var invalidFeedback = document.querySelector(".invalid-feedback");        
+        var invalidFeedback = document.querySelector(".invalid-feedback"); 
         
-        // if the agree and terms is not checked, show invalid feedback
-        if (!invalidCheck) {
-            invalidFeedback.style.display = "block";            
-            return false;
-          } else {
-            // else, don't show the invalid feedback
-            invalidFeedback.style.display = "none";
-            // show the project result
-            if(selectedValue == "project") {
-                contentDiv.style.display = "block";
-                contentDiv2.style.display = "none";
-            // show the tutor result
-            } else if(selectedValue == "tutor") {
-                contentDiv2.style.display = "block";
-                contentDiv.style.display = "none";
+        
+        if (select.value === "1") {
+            Swal.fire({
+                title: 'Begineer Advice',
+                text: 'We suggest you can begin with our course to improve your skills.',
+                icon: 'warning',
+                confirmButtonText: '<a href="learn.html" style="color:white;">Go to Learn</a>',
+                confirmButtonActions: 'OK'
+              });
+        } else {
+            // if the agree and terms is not checked, show invalid feedback
+            if (!invalidCheck) {
+                invalidFeedback.style.display = "block";            
+                return false;
+            } else {
+                // else, don't show the invalid feedback
+                invalidFeedback.style.display = "none";
+                // show the project result
+                if(selectedValue == "project") {
+                    contentDiv.style.display = "block";
+                    contentDiv2.style.display = "none";
+                // show the tutor result
+                } else if(selectedValue == "tutor") {
+                    contentDiv2.style.display = "block";
+                    contentDiv.style.display = "none";
+                }
+                return true;
             }
-            return true;
+
         }
     });
 });
+
+
 
 // Functionality of cards on Learn Page
 // This line targets the class learnContainer, which is on the Learn page, so that the cards are added into this container when created.
