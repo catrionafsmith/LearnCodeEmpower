@@ -13,7 +13,7 @@ main > .container {
 
 /* code for image at the top of cards (this is .card-img-top1, as otherwise the changes to the .card-img-top beneath also apply to this page) */
 .card-img-top1 {
-  height: 40px; /* adjust this value as needed */
+  height: 45px; /* adjust this value as needed */
 }
 
 /* Hover effect for Learn cards - do we want to keep? */
@@ -23,6 +23,11 @@ main > .container {
 .learnCard:hover {
     transform: scale(1.1);
   }
+
+/* For diff colour card headers */
+.CSS {
+  background-color: antiquewhite;
+}
 
   /* For chatbot */
 .chatbot {
