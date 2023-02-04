@@ -32,6 +32,9 @@ document.addEventListener("DOMContentLoaded", function(){
             } else {
                 // else, don't show the invalid feedback
                 invalidFeedback.style.display = "none";
+                // direct to result_container
+                window.location.hash = "#result_container";
+
                 // show the project result
                 if(selectedValue == "project") {
                     contentDiv.style.display = "block";
