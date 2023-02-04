@@ -83,5 +83,3 @@ createCard(CSS1)
 createCard(HTML2)
 createCard(CSS2)
 
-
-

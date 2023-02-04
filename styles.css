@@ -69,6 +69,19 @@ main > .container {
   height: 260px; /* adjust this value as needed */
 }
 
+/* for navbar */
+.navbar {
+  background-color: #AAE3E2;
+}
+
+.navbar-img {
+  height: 22px;
+}
+
+/*for contact us*/
+#contact_us_container {
+  padding-bottom: 150px;
+}
 
 /* Code for dropdowns(?) - is it all needed? */
 .dropdown-menu {
