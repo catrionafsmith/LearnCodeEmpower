@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function(){
         if (select.value === "1") {
             Swal.fire({
                 title: 'Beginner Advice',
-                text: 'We suggest you can begin with some courses to improve your skills.',
+                text: 'We suggest you begin with some courses to get your skills up to speed.',
                 icon: 'warning',
                 confirmButtonText: '<a href="learn.html" style="color:white;">Go to Learn</a>',
                 confirmButtonActions: 'OK'
@@ -109,8 +109,6 @@ function clearCards() {
 // Button functionality on Learn page
 function htmlFunc() {
     for (let i = 0; i < courses.length; i++) {
-        console.log(i)
-        console.log(courses[i])
         if (courses[i][0] == "Learn HTML") {
             createCard(courses[i])
         };
@@ -120,8 +118,6 @@ function htmlFunc() {
 
 function cssFunc() {
     for (let i = 0; i < courses.length; i++) {
-        console.log(i)
-        console.log(courses[i])
         if (courses[i][0] == "Learn CSS") {
             createCard(courses[i])
         };
@@ -131,8 +127,6 @@ function cssFunc() {
 
 function jsFunc() {
     for (let i = 0; i < courses.length; i++) {
-        console.log(i)
-        console.log(courses[i])
         if (courses[i][0] == "Learn JavaScript") {
             createCard(courses[i])
         };
@@ -142,8 +136,6 @@ function jsFunc() {
 
 function pyFunc() {
     for (let i = 0; i < courses.length; i++) {
-        console.log(i)
-        console.log(courses[i])
         if (courses[i][0] == "Learn Python") {
             createCard(courses[i])
         };
@@ -153,8 +145,6 @@ function pyFunc() {
 
 function javaFunc() {
     for (let i = 0; i < courses.length; i++) {
-        console.log(i)
-        console.log(courses[i])
         if (courses[i][0] == "Learn Java") {
             createCard(courses[i])
         };
@@ -164,8 +154,6 @@ function javaFunc() {
 
 function cFunc() {
     for (let i = 0; i < courses.length; i++) {
-        console.log(i)
-        console.log(courses[i])
         if (courses[i][0] == "Learn C++") {
             createCard(courses[i])
         };
