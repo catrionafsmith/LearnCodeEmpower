@@ -84,11 +84,14 @@ let CSS1 = ["Learn CSS", "Codecademy CSS Course", "This course teaches you how t
 let HTML2 = ["Learn HTML", "FreeCodeCamp HTML Course", "This course teaches you about HTML.", "https://www.freecodecamp.org/news/learn-html-beginners-course/"]
 let CSS2 = ["Learn CSS", "FreeCodeCamp CSS Course", "This course teaches you how to add CSS to your website.", "https://www.freecodecamp.org/news/learn-css-in-11-hours/"]
 let JavaScript = ["Learn JavaScript", "FreeCodeCamp JavaScript Course", "This JavaScript course teaches you how to add functionality to your website.", "https://www.freecodecamp.org/news/learn-javascript-full-course/"]
+let JavaScript2 = ["Learn JavaScript", "Frontendmasters JavaScript Course", "This course teaches you how to make JavaScript on your own", "https://www.frontendmasters.com/courses/?q=JavaScript/learn-JavaScript-in-14-hours/"]
+let JavaScript3 = ["Learn JavaScript", "w3schools JavaScript Course", "This course teaches you how to make JavaScript on your own", "https://www.w3schools.com/js/default.asp=JavaScript/learn-JavaScript-in-14-hours/"]
 let Python = ["Learn Python", "FreeCodeCamp Python Course", "Have fun learning the language of data and ML! Learn about libraries like 'pandas'.", "https://www.freecodecamp.org/news/python-programming-course/"]
+let Python2 = ["Learn Python", "Frontendmasters Python Course", "This course teaches you how to make Python on your own", "https://www.frontendmasters.com/courses/?q=python/learn-Python-in-15-hours/"]
+let Python3 = ["Learn Python", "w3schools Python Course", "This course teaches you how to make Python on your own", "https://www.w3schools.com/python/default.asp/learn-Python-in-15-hours/"]
 let Java = ["Learn Java", "FreeCodeCamp Java Course", "Java is a coding language that can run on any platform!", "https://www.freecodecamp.org/news/learn-java-free-java-courses-for-beginners/"]
 let C = ["Learn C++", "FreeCodeCamp C Course", "Developers use C for everything from building video games to coding operating systems.", "https://www.freecodecamp.org/news/learn-c-with-free-31-hour-course/"]
-
-let courses = [HTML1, HTML2, CSS1, CSS2, JavaScript, Python, Java, C] 
+let courses = [HTML1, HTML2, CSS1, CSS2, JavaScript, JavaScript2, JavaScript3, Python, Python2, Python3, Java, C] 
 
 // Here, the createCard function is used to make a card for each of the course variables above.
 function allCourses() {
