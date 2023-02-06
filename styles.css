@@ -1,6 +1,11 @@
 /* CSS for fonts and padding. N.B. Also need google font link in the head of each page to ensure that the correct font is used */
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: #EAFDFC;
+}
+/* for navbar, move it here just for better adjust color pallet */
+.navbar {
+  background-color: #62B6B7;
 }
 
 h1 {
@@ -78,9 +83,7 @@ main > .container {
 }
 
 /* for navbar */
-.navbar {
-  background-color: #AAE3E2;
-}
+
 
 .navbar-img {
   height: 22px;
