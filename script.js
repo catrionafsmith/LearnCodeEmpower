@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", function(){
         
         if (select.value === "1") {
             Swal.fire({
-                title: 'Begineer Advice',
-                text: 'We suggest you can begin with our course to improve your skills.',
+                title: 'Beginner Advice',
+                text: 'We suggest you can begin with some courses to improve your skills.',
                 icon: 'warning',
                 confirmButtonText: '<a href="learn.html" style="color:white;">Go to Learn</a>',
                 confirmButtonActions: 'OK'
@@ -68,7 +68,7 @@ function createCard([type, title, description, link]) {
                 <div class="card-body">
                     <h5 class="card-title">${title}</h5>
                     <p class="card-text">${description}</p>
-                    <a href="${link}" class="btn btn-primary">Go somewhere</a>
+                    <a href="${link}" class="btn btn-primary">Start the course!</a>
                 </div>
         </div>
     </div>
@@ -78,13 +78,94 @@ function createCard([type, title, description, link]) {
     learnCards.innerHTML += code;
 }
 // Information about each course
+
 let HTML1 = ["Learn HTML", "Codecademy HTML Course", "This course teaches you how to make HTML from scratch!", "https://www.codecademy.com/learn/learn-html"]
 let CSS1 = ["Learn CSS", "Codecademy CSS Course", "This course teaches you how to use CSS styling.", "https://www.codecademy.com/learn/learn-css"]
 let HTML2 = ["Learn HTML", "FreeCodeCamp HTML Course", "This course teaches you about HTML.", "https://www.freecodecamp.org/news/learn-html-beginners-course/"]
 let CSS2 = ["Learn CSS", "FreeCodeCamp CSS Course", "This course teaches you how to add CSS to your website.", "https://www.freecodecamp.org/news/learn-css-in-11-hours/"]
-// Here, the createCard function is used to make a card for each of the course variables above.
-createCard(HTML1)
-createCard(CSS1)
-createCard(HTML2)
-createCard(CSS2)
+let JavaScript = ["Learn JavaScript", "FreeCodeCamp JavaScript Course", "This JavaScript course teaches you how to add functionality to your website.", "https://www.freecodecamp.org/news/learn-javascript-full-course/"]
+let Python = ["Learn Python", "FreeCodeCamp Python Course", "Have fun learning the language of data and ML! Learn about libraries like 'pandas'.", "https://www.freecodecamp.org/news/python-programming-course/"]
+let Java = ["Learn Java", "FreeCodeCamp Java Course", "Java is a coding language that can run on any platform!", "https://www.freecodecamp.org/news/learn-java-free-java-courses-for-beginners/"]
+let C = ["Learn C++", "FreeCodeCamp C Course", "Developers use C for everything from building video games to coding operating systems.", "https://www.freecodecamp.org/news/learn-c-with-free-31-hour-course/"]
 
+let courses = [HTML1, HTML2, CSS1, CSS2, JavaScript, Python, Java, C] 
+
+// Here, the createCard function is used to make a card for each of the course variables above.
+function allCourses() {
+    courses.forEach(function(e) {
+        createCard(e)
+    })
+}
+
+
+function clearCards() {
+    window.location.reload()
+}
+
+
+// Button functionality on Learn page
+function htmlFunc() {
+    for (let i = 0; i < courses.length; i++) {
+        console.log(i)
+        console.log(courses[i])
+        if (courses[i][0] == "Learn HTML") {
+            createCard(courses[i])
+        };
+
+      }
+}
+
+function cssFunc() {
+    for (let i = 0; i < courses.length; i++) {
+        console.log(i)
+        console.log(courses[i])
+        if (courses[i][0] == "Learn CSS") {
+            createCard(courses[i])
+        };
+
+      }
+}
+
+function jsFunc() {
+    for (let i = 0; i < courses.length; i++) {
+        console.log(i)
+        console.log(courses[i])
+        if (courses[i][0] == "Learn JavaScript") {
+            createCard(courses[i])
+        };
+
+      }
+}
+
+function pyFunc() {
+    for (let i = 0; i < courses.length; i++) {
+        console.log(i)
+        console.log(courses[i])
+        if (courses[i][0] == "Learn Python") {
+            createCard(courses[i])
+        };
+
+      }
+}
+
+function javaFunc() {
+    for (let i = 0; i < courses.length; i++) {
+        console.log(i)
+        console.log(courses[i])
+        if (courses[i][0] == "Learn Java") {
+            createCard(courses[i])
+        };
+
+      }
+}
+
+function cFunc() {
+    for (let i = 0; i < courses.length; i++) {
+        console.log(i)
+        console.log(courses[i])
+        if (courses[i][0] == "Learn C++") {
+            createCard(courses[i])
+        };
+
+      }
+}
