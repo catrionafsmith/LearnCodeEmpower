@@ -59,7 +59,7 @@ main > .container {
 #result_id_div {    
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 #result_title {
