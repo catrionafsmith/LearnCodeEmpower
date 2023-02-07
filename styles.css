@@ -130,7 +130,18 @@ main > .container {
 
 /*for contact us*/
 #contact_us_container {
-  padding-bottom: 150px;
+  padding-bottom: 50px;
+}
+
+#div-contact {
+  height:100%; 
+  width:100%;
+}
+
+#img-contact {
+  height:100%; 
+  width:100%;
+  object-fit:cover;
 }
 
 /* Code for dropdowns(?) - is it all needed? */
