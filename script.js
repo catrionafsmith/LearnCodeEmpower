@@ -90,15 +90,28 @@ let Python3 = ["Learn Python", "w3schools Python Course", "Learn Python through 
 let Java = ["Learn Java", "FreeCodeCamp Java Course", "Java is a coding language that can run on any platform!", "https://www.freecodecamp.org/news/learn-java-free-java-courses-for-beginners/"]
 let courses = [Basics, HTML1, HTML2, CSS1, CSS2, JavaScript, JavaScript2, JavaScript3, Python, Python2, Python3, Java] 
 
-// Here, the createCard function is used to make a card for each of the course variables.
-// Button functionality on Learn page
+// Button functionality on Learn page: Here, the createCard function is used to make course cards, depending on which button is clicked on the Learn page.
 function allCourses() {
+    // Remove existing cards
+    let cardContainer = document.getElementById("learnContainer");
+    while (cardContainer.firstChild) {
+        cardContainer.removeChild(cardContainer.firstChild);
+    }
+
+    // Create new cards
     courses.forEach(function(e) {
         createCard(e)
     })
 }
 
 function cFunc() {
+    // Remove existing cards
+    let cardContainer = document.getElementById("learnContainer");
+    while (cardContainer.firstChild) {
+        cardContainer.removeChild(cardContainer.firstChild);
+    }
+
+    // Create new cards
     for (let i = 0; i < courses.length; i++) {
         if (courses[i][0] == "Learn the Basics") {
             createCard(courses[i])
@@ -107,32 +120,30 @@ function cFunc() {
       }
 }
 
+
 function htmlFunc() {
+    // Remove existing cards
+    let cardContainer = document.getElementById("learnContainer");
+    while (cardContainer.firstChild) {
+        cardContainer.removeChild(cardContainer.firstChild);
+    }
+
+    // Create new cards
     for (let i = 0; i < courses.length; i++) {
         if (courses[i][0] == "Learn HTML") {
-            createCard(courses[i])
-        };
-
-      }
+            createCard(courses[i]);
+        }
+    }
 }
 
-// function htmlFunc() {
-//     // Remove existing cards
-//     // add id = "learnContainer" in HTML page first!!!
-//     let cardContainer = document.getElementById("learnContainer");
-//     while (cardContainer.firstChild) {
-//         cardContainer.removeChild(cardContainer.firstChild);
-//     }
-
-//     // Create new cards
-//     for (let i = 0; i < courses.length; i++) {
-//         if (courses[i][0] == "Learn HTML") {
-//             createCard(courses[i]);
-//         }
-//     }
-// }
-
 function cssFunc() {
+    // Remove existing cards
+    let cardContainer = document.getElementById("learnContainer");
+    while (cardContainer.firstChild) {
+        cardContainer.removeChild(cardContainer.firstChild);
+    }
+
+    // Create new cards
     for (let i = 0; i < courses.length; i++) {
         if (courses[i][0] == "Learn CSS") {
             createCard(courses[i])
@@ -142,6 +153,13 @@ function cssFunc() {
 }
 
 function jsFunc() {
+    // Remove existing cards
+    let cardContainer = document.getElementById("learnContainer");
+    while (cardContainer.firstChild) {
+        cardContainer.removeChild(cardContainer.firstChild);
+    }
+
+    // Create new cards
     for (let i = 0; i < courses.length; i++) {
         if (courses[i][0] == "Learn JavaScript") {
             createCard(courses[i])
@@ -151,6 +169,13 @@ function jsFunc() {
 }
 
 function pyFunc() {
+    // Remove existing cards
+    let cardContainer = document.getElementById("learnContainer");
+    while (cardContainer.firstChild) {
+        cardContainer.removeChild(cardContainer.firstChild);
+    }
+
+    // Create new cards
     for (let i = 0; i < courses.length; i++) {
         if (courses[i][0] == "Learn Python") {
             createCard(courses[i])
@@ -160,6 +185,13 @@ function pyFunc() {
 }
 
 function javaFunc() {
+    // Remove existing cards
+    let cardContainer = document.getElementById("learnContainer");
+    while (cardContainer.firstChild) {
+        cardContainer.removeChild(cardContainer.firstChild);
+    }
+
+    // Create new cards
     for (let i = 0; i < courses.length; i++) {
         if (courses[i][0] == "Learn Java") {
             createCard(courses[i])
