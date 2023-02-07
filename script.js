@@ -86,9 +86,15 @@ let JavaScript2 = ["Learn JavaScript", "Frontendmasters JavaScript Course", "Thi
 let JavaScript3 = ["Learn JavaScript", "w3schools JavaScript Course", "This course teaches you how to make JavaScript on your own", "https://www.w3schools.com/js/default.asp=JavaScript/learn-JavaScript-in-14-hours/"]
 let Python = ["Learn Python", "FreeCodeCamp Python Course", "Have fun learning the language of data and ML! Learn about libraries like 'pandas'.", "https://www.freecodecamp.org/news/python-programming-course/"]
 let Python2 = ["Learn Python", "Frontendmasters Python Course", "This course teaches you how to make your own Python scripts!", "https://www.frontendmasters.com/courses/?q=python/learn-Python-in-15-hours/"]
-let Python3 = ["Learn Python", "w3schools Python Course", "Learn Python through functional examples and scripts", "https://www.w3schools.com/python/default.asp/learn-Python-in-15-hours/"]
+let Python3 = ["Learn Python", "w3schools Python Course", "Learn Python through functional examples and scripts", "https://www.w3schools.com/python/"]
 let Java = ["Learn Java", "FreeCodeCamp Java Course", "Java is a coding language that can run on any platform!", "https://www.freecodecamp.org/news/learn-java-free-java-courses-for-beginners/"]
 let courses = [Basics, HTML1, HTML2, CSS1, CSS2, JavaScript, JavaScript2, JavaScript3, Python, Python2, Python3, Java] 
+
+// Code so that all Learn courses are displayed when the page is loaded
+courses.forEach(function(e) {
+    createCard(e)
+})
+
 
 // Button functionality on Learn page: Here, the createCard function is used to make course cards, depending on which button is clicked on the Learn page.
 function allCourses() {
