@@ -8,6 +8,11 @@ body {
   background-color: #62B6B7;
 }
 
+.footer {
+  background-color: rgb(98, 182, 183, 0.2);
+}
+
+
 h1 {
   font-family: 'Poppins', sans-serif;
 }
@@ -16,6 +21,25 @@ main > .container {
     padding: 60px 15px 0;
   }
 
+.btn-primary {
+  margin: 0.1rem;
+  background-color: #6096B4;
+  border-color: #6096B4;
+};
+
+.clearButton {
+  margin: 0.1rem;
+  background-color: #9EA1D4;
+  border-color: #9EA1D4;
+};
+
+.btn-primary:active, 
+.btn-primary:hover, 
+.btn-primary.focus, 
+.btn-primary.active {
+    background-color: #46812b !important;
+    border-color: #46812b !important;
+}
 /* code for image at the top of cards (this is .card-img-top1, as otherwise the changes to the .card-img-top beneath also apply to this page) */
 .card-img-top1 {
   height: 45px; /* adjust this value as needed */
@@ -30,8 +54,29 @@ main > .container {
   }
 
 /* For diff colour card headers */
+
+.HTML {
+  background-color: #FDEBED;
+}
+
 .CSS {
   background-color: antiquewhite;
+}
+
+.JavaScript {
+  background-color: #FFCEFE;
+}
+
+.Python {
+  background-color: #D9ACF5;
+}
+
+.Java {
+  background-color: #AAE3E2;
+}
+
+.Basics {
+  background-color: #FFF6BD;
 }
 
   /* For chatbot */
@@ -39,9 +84,7 @@ main > .container {
   width: 10rem;
 }
 
-.btn {
-  margin: 0.1rem;
-}
+
 
 /*for volunteer*/
 #selection_card {    

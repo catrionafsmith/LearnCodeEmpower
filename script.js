@@ -61,10 +61,8 @@ function createCard([type, title, description, link]) {
     let code = `
     
     <div class="col">        
-        <div class="card learnCard">
-            <div class="card-header">
-            ${type}
-            </div>
+        <div class="card learnCard ">
+            <div class="card-header ${type}">${type}</div>
                 <div class="card-body">
                     <h5 class="card-title">${title}</h5>
                     <p class="card-text">${description}</p>
@@ -78,35 +76,37 @@ function createCard([type, title, description, link]) {
     learnCards.innerHTML += code;
 }
 // Information about each course
-
+let Basics = ["Learn the Basics", "FreeCodeCamp Basics", "Start your coding journey by learning the basics!", "https://www.freecodecamp.org/news/introduction-to-computer-programming-and-computer-science-course/"]
 let HTML1 = ["Learn HTML", "Codecademy HTML Course", "This course teaches you how to make HTML from scratch!", "https://www.codecademy.com/learn/learn-html"]
 let CSS1 = ["Learn CSS", "Codecademy CSS Course", "This course teaches you how to use CSS styling.", "https://www.codecademy.com/learn/learn-css"]
 let HTML2 = ["Learn HTML", "FreeCodeCamp HTML Course", "This course teaches you about HTML.", "https://www.freecodecamp.org/news/learn-html-beginners-course/"]
 let CSS2 = ["Learn CSS", "FreeCodeCamp CSS Course", "This course teaches you how to add CSS to your website.", "https://www.freecodecamp.org/news/learn-css-in-11-hours/"]
 let JavaScript = ["Learn JavaScript", "FreeCodeCamp JavaScript Course", "This JavaScript course teaches you how to add functionality to your website.", "https://www.freecodecamp.org/news/learn-javascript-full-course/"]
-let JavaScript2 = ["Learn JavaScript", "Frontendmasters JavaScript Course", "This course teaches you how to make JavaScript on your own", "https://www.frontendmasters.com/courses/?q=JavaScript/learn-JavaScript-in-14-hours/"]
+let JavaScript2 = ["Learn JavaScript", "Frontendmasters JavaScript Course", "This course gives you confidence in applying JavaScript on your own", "https://www.frontendmasters.com/courses/?q=JavaScript/learn-JavaScript-in-14-hours/"]
 let JavaScript3 = ["Learn JavaScript", "w3schools JavaScript Course", "This course teaches you how to make JavaScript on your own", "https://www.w3schools.com/js/default.asp=JavaScript/learn-JavaScript-in-14-hours/"]
 let Python = ["Learn Python", "FreeCodeCamp Python Course", "Have fun learning the language of data and ML! Learn about libraries like 'pandas'.", "https://www.freecodecamp.org/news/python-programming-course/"]
-let Python2 = ["Learn Python", "Frontendmasters Python Course", "This course teaches you how to make Python on your own", "https://www.frontendmasters.com/courses/?q=python/learn-Python-in-15-hours/"]
-let Python3 = ["Learn Python", "w3schools Python Course", "This course teaches you how to make Python on your own", "https://www.w3schools.com/python/default.asp/learn-Python-in-15-hours/"]
+let Python2 = ["Learn Python", "Frontendmasters Python Course", "This course teaches you how to make your own Python scripts!", "https://www.frontendmasters.com/courses/?q=python/learn-Python-in-15-hours/"]
+let Python3 = ["Learn Python", "w3schools Python Course", "Learn Python through functional examples and scripts", "https://www.w3schools.com/python/default.asp/learn-Python-in-15-hours/"]
 let Java = ["Learn Java", "FreeCodeCamp Java Course", "Java is a coding language that can run on any platform!", "https://www.freecodecamp.org/news/learn-java-free-java-courses-for-beginners/"]
-let C = ["Learn C++", "FreeCodeCamp C Course", "Developers use C for everything from building video games to coding operating systems.", "https://www.freecodecamp.org/news/learn-c-with-free-31-hour-course/"]
-let courses = [HTML1, HTML2, CSS1, CSS2, JavaScript, JavaScript2, JavaScript3, Python, Python2, Python3, Java, C] 
+let courses = [Basics, HTML1, HTML2, CSS1, CSS2, JavaScript, JavaScript2, JavaScript3, Python, Python2, Python3, Java] 
 
-// Here, the createCard function is used to make a card for each of the course variables above.
+// Here, the createCard function is used to make a card for each of the course variables.
+// Button functionality on Learn page
 function allCourses() {
     courses.forEach(function(e) {
         createCard(e)
     })
 }
 
+function cFunc() {
+    for (let i = 0; i < courses.length; i++) {
+        if (courses[i][0] == "Learn the Basics") {
+            createCard(courses[i])
+        };
 
-function clearCards() {
-    window.location.reload()
+      }
 }
 
-
-// Button functionality on Learn page
 function htmlFunc() {
     for (let i = 0; i < courses.length; i++) {
         if (courses[i][0] == "Learn HTML") {
@@ -152,11 +152,6 @@ function javaFunc() {
       }
 }
 
-function cFunc() {
-    for (let i = 0; i < courses.length; i++) {
-        if (courses[i][0] == "Learn C++") {
-            createCard(courses[i])
-        };
-
-      }
+function clearCards() {
+    window.location.reload()
 }
