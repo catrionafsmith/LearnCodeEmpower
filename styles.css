@@ -36,6 +36,12 @@ main > .container {
     border-color: #A0C3D2 !important;
 }
 
+/* Styling for icons on pages */
+.icon_img {
+  max-width: 20rem;
+  
+}
+
 /* Hover effect for Learn cards - do we want to keep? */
 .learnCard {
   transition: 0.3s;
