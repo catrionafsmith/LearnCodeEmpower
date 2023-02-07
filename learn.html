@@ -53,31 +53,71 @@
         <div class="container">
         <h1 class="mt-5">Learn</h1>
         <p class="lead">Unlock Your Tech Potential with Our Free Course Links for Women!</p>
-        <p> Are you ready to take your tech skills to the next level? </p>
-        <p> We have curated a comprehensive list of free online courses for women wanting to enter the tech industry. From coding basics to C++, you'll find a variety of options to choose from, all taught by experienced professionals in the field. Expand your knowledge, gain practical experience, and set yourself apart in the competitive tech industry. </p>
-        <p>Start exploring the courses now and discover the limitless possibilities in tech!</p>
+        <p>
+          Are you ready to take your tech skills to the next level? 
+          Our website provides a comprehensive list of free online courses for women wanting to enter the tech industry. From coding basics to C++, you'll find a variety of options to choose from, all taught by experienced professionals in the field. Expand your knowledge, gain practical experience, and set yourself apart in the competitive tech industry. Start exploring the courses now and discover the limitless possibilities in tech!</p>
+        <br>
+          <p>We intend for this page to have cards displaying info and links to free courses that the user can take part in. 
+          Further improvements to this page: </p>
+          <ul>
+            <li>
+              Creating a list of courses, with a description and a link for each, so that this page is functional
+            </li>
+            <li>
+              Adding filter buttons so that the user can filter for the type of courses that they're interested in (as per <a href="https://scrimba.com/allcourses?topic=css">scrimbas's website</a>)
+            </li>
+            <li>
+              Adding a different image to the top of each type of course. e.g. Blue image for CSS, Red image for HTML.(Again a similar idea to Scrimba's website above)
+            </li>
+          </ul>
         <div class="buttondiv">
         <button type="button" onclick="allCourses()" class="btn btn-primary">Show All Courses</button>
-        <button type="button" onclick="cFunc()" class="btn btn-primary">Coding Basics</button>
         <button type="button" onclick="htmlFunc()" class="btn btn-primary">HTML</button>
         <button type="button" onclick="cssFunc()" class="btn btn-primary">CSS</button>
         <button type="button" onclick="jsFunc()" class="btn btn-primary">JavaScript</button>
         <button type="button" onclick="pyFunc()" class="btn btn-primary">Python</button>
         <button type="button" onclick="javaFunc()" class="btn btn-primary">Java</button>
-        <button type="button" onclick="clearCards()" class="btn btn-secondary">Clear Courses</button>
+        <button type="button" onclick="cFunc()" class="btn btn-primary">C++</button>
+        <button type="button" onclick="clearCards()" class="btn btn-primary">Clear Courses</button>
           
       </div>
         <br>
-        <div class="row row-cols-1 row-cols-md-2 g-4 learnContainer">
-    
+        <div class="row row-cols-1 row-cols-md-2 g-4 learnContainer" id="learnContainer">
+          <!-- Hard-coded Example card just to show this style of card -->
+            <!-- <div class="col">
+              <div class="card learnCard">
+                <div class="card-header">
+                  HTML
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Example Card title 1</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div> -->
+          <!-- Hard-coded Example card just to show this style of card -->
+            <!-- <div class="col">
+              <div class="card learnCard">
+                <img src="example.png" class="card-img-top1" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Example Card title 2</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div> -->
+           
+            
+          </div>
         </div>
         <br>
     </main>
 
     <!-- Begin footer -->
-    <footer class="footer mt-auto py-3">
+    <footer class="footer mt-auto py-3 bg-light">
         <div class="container">
-        <span class="text-muted">Created by Team Lime © 2023.</span>
+        <span class="text-muted">Created by Team Lime.</span>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>

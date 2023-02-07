@@ -116,6 +116,22 @@ function htmlFunc() {
       }
 }
 
+// function htmlFunc() {
+//     // Remove existing cards
+//     // add id = "learnContainer" in HTML page first!!!
+//     let cardContainer = document.getElementById("learnContainer");
+//     while (cardContainer.firstChild) {
+//         cardContainer.removeChild(cardContainer.firstChild);
+//     }
+
+//     // Create new cards
+//     for (let i = 0; i < courses.length; i++) {
+//         if (courses[i][0] == "Learn HTML") {
+//             createCard(courses[i]);
+//         }
+//     }
+// }
+
 function cssFunc() {
     for (let i = 0; i < courses.length; i++) {
         if (courses[i][0] == "Learn CSS") {
