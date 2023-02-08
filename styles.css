@@ -25,16 +25,17 @@ main > .container {
   margin: 0.1rem;
   background-color: #6096B4;
   border-color: #6096B4;
+
 };
 
 /* I'm trying to change the colour of the button when you hover over it - it won't work and I don't know why */
-.btn-primary:active, 
-.btn-primary:hover, 
-.btn-primary.focus, 
-.btn-primary.active {
+ 
+.btn:hover {
     background-color: #A0C3D2 !important;
     border-color: #A0C3D2 !important;
 }
+
+
 
 /* Styling for icons on pages */
 .icon_img {
@@ -161,14 +162,14 @@ main > .container {
     background-color: var(--bs-red);
   }
   
-  .btn-hover-light {
+  /* .btn-hover-light {
     background-color: var(--bs-white);
   }
   .btn-hover-light:hover,
   .btn-hover-light:focus {
-    color: var(--bs-blue);
-    background-color: var(--bs-light);
-  }
+    color: var(--bs-white);
+    background-color: var(--bs-white);
+  } */
     
   .form-control-dark {
     background-color: rgba(255, 255, 255, .05);
