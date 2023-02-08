@@ -39,8 +39,10 @@ main > .container {
 
 /* Styling for icons on pages */
 .icon_img {
-  max-width: 20rem;
-  
+  /* max-width: 10; */
+  align-items: center;
+  height: auto;
+  padding: 1%;
 }
 
 /* Hover effect for Learn cards - do we want to keep? */
