@@ -207,5 +207,8 @@ function javaFunc() {
 }
 
 function clearCards() {
-    window.location.reload()
+    let cardContainer = document.getElementById("learnContainer");
+    while (cardContainer.firstChild) {
+        cardContainer.removeChild(cardContainer.firstChild);
+    }
 }
