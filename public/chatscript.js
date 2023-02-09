@@ -1,4 +1,3 @@
-
 $("#terminal").terminal(async function (command, terminal) {
     try {
         const prompt = `you are a helpful, knowledge sharing careers chatbot. I say: ${command}. You reply:`
@@ -32,6 +31,5 @@ $("#terminal").terminal(async function (command, terminal) {
         greetings: 'Careers Chatbot v1:',
         name: 'gpt3_demo',
         height: 400,
-        // width: 800,
         prompt: '> ',
     });
