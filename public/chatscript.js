@@ -2,7 +2,7 @@
 $("#terminal").terminal(async function (command, terminal) {
     try {
         const prompt = `you are a helpful, knowledge sharing careers chatbot. I say: ${command}. You reply:`
-        const keyresp = await fetch('/.netlify/functions/hello')
+        const keyresp = await fetch('/.netlify/functions/get-token')
         .then(response => response.json()
         )
         //  console.log(keyresp['message']);
