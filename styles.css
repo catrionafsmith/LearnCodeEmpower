@@ -1,4 +1,54 @@
 /* CSS for fonts and padding. N.B. Also need google font link in the head of each page to ensure that the correct font is used */
+
+/* Styling for Home page elements */
+
+.top-section {
+  padding: 75px;
+  text-align: center;
+  background: #97DECE;
+  color: rgb(21, 18, 18);
+  font-size: 25px;
+  
+}
+
+.xlarge-font  {
+  font-size: 3rem;
+}
+
+.text-typing {
+             
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.text-typing {
+  padding: 20px 30px;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 20px;
+}
+.text-typing p {
+  margin: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 5.5s steps(40, end),
+blink-caret .75s step-end infinite
+}
+@keyframes typing {
+  0% { width:0% }
+  100% { width:100% }
+}
+@keyframes blink {
+  0%,100% {
+    border-right:2px solid transparent;
+  }
+  50% {
+    border-right:2px solid #222;
+  }
+}
+
+/* Used throughout */
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #EAFDFC;
