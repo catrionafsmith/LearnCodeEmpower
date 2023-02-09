@@ -28,9 +28,13 @@ main > .container {
 
 };
 
-/* I'm trying to change the colour of the button when you hover over it - it won't work and I don't know why */
- 
-.btn:hover {
+/* primary button hover, please make sure this two part both exist */
+.btn-primary.active:hover{
+  color: #A0C3D2;
+  background-color: #A0C3D2;
+  border-color: #A0C3D2;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
     background-color: #A0C3D2 !important;
     border-color: #A0C3D2 !important;
 }
