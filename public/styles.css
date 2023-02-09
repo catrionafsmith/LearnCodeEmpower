@@ -93,7 +93,10 @@ main > .container {
 
 /* Styling for icons on pages */
 .icon_img {
-  /* max-width: 10; */
+  max-height: 20rem;
+  max-width: 20rem; 
+  min-height: 10rem;
+  min-width: 10rem;
   align-items: center;
   height: auto;
   padding: 1%;
