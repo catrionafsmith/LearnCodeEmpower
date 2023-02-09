@@ -99,7 +99,7 @@ main > .container {
   padding: 1%;
 }
 
-/* Hover effect for Learn cards - do we want to keep? */
+/* Hover effect for Learn cards*/
 .learnCard {
   transition: 0.3s;
 }
@@ -137,6 +137,13 @@ main > .container {
   width: 10rem;
 }
 
+.terminal {
+  --color: #A0C3D2;
+  --animation: terminal-glow;
+  --glow: 0.1;
+  --size: 1.5;
+  /* --font: 'Poppins', sans-serif; */
+}
 
 
 /*for volunteer*/
