@@ -193,10 +193,12 @@ main > .container {
 .card-img-top {
   height: 260px; /* adjust this value as needed */
 }
+.form-volunteer {
+  font-weight: bold;
+}
+
 
 /* for navbar */
-
-
 .navbar-img {
   height: 22px;
 }
