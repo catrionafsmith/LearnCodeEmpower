@@ -11,8 +11,14 @@
   
 }
 
-.xlarge-font  {
+.xlarge-font {
   font-size: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .xlarge-font {
+    font-size: 2rem;
+  }
 }
 
 .text-typing {
