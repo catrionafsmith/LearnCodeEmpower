@@ -61,16 +61,19 @@ function createCard([type, title, description, link]) {
     let code = `
     
     <div class="col">        
-        <div class="card learnCard ">
-            <div class="card-header ${type}">${type}</div>
-                <div class="card-body">
-                    <h5 class="card-title">${title}</h5>
-                    <p class="card-text">${description}</p>
-                    <a href="${link}" class="btn btn-primary">Start the course!</a>
-                </div>
+        <div class="card h-100 learnCard ">
+            <div class="card-header ${type}">
+                ${type}
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">${title}</h5>
+                <p class="card-text">${description}</p>
+            </div>
+            <div class="card-footer">
+                <a href="${link}" class="btn btn-primary">Start the course!</a>
+            </div>
         </div>
     </div>
-    
 
     `;
     learnCards.innerHTML += code;
@@ -81,13 +84,13 @@ let HTML1 = ["Learn HTML", "Codecademy HTML Course", "This course teaches you ho
 let CSS1 = ["Learn CSS", "Codecademy CSS Course", "This course teaches you how to use CSS styling.", "https://www.codecademy.com/learn/learn-css"]
 let HTML2 = ["Learn HTML", "FreeCodeCamp HTML Course", "This course teaches you about HTML.", "https://www.freecodecamp.org/news/learn-html-beginners-course/"]
 let CSS2 = ["Learn CSS", "FreeCodeCamp CSS Course", "This course teaches you how to add CSS to your website.", "https://www.freecodecamp.org/news/learn-css-in-11-hours/"]
-let JavaScript = ["Learn JavaScript", "FreeCodeCamp JavaScript Course", "This JavaScript course teaches you how to add functionality to your website.", "https://www.freecodecamp.org/news/learn-javascript-full-course/"]
-let JavaScript2 = ["Learn JavaScript", "Frontendmasters JavaScript Course", "This course gives you confidence in applying JavaScript on your own", "https://www.frontendmasters.com/courses/?q=JavaScript/learn-JavaScript-in-14-hours/"]
-let JavaScript3 = ["Learn JavaScript", "w3schools JavaScript Course", "This course teaches you how to make JavaScript on your own", "https://www.w3schools.com/js/default.asp=JavaScript/learn-JavaScript-in-14-hours/"]
+let JavaScript = ["Learn JavaScript", "FreeCodeCamp JavaScript Course", "This course teaches you JavaScript through a series of YouTube videos.", "https://www.youtube.com/watch?v=PkZNo7MFNFg"]
+let JavaScript2 = ["Learn JavaScript", "Frontendmasters JavaScript Course", "This course gives you confidence in applying JavaScript on your own.", "https://www.frontendmasters.com/courses/?q=JavaScript/learn-JavaScript-in-14-hours/"]
+let JavaScript3 = ["Learn JavaScript", "w3schools JavaScript Course", "This course teaches you how to use JavaScript through an interactive tutorial.", "https://www.w3schools.com/js/"]
 let Python = ["Learn Python", "FreeCodeCamp Python Course", "Have fun learning the language of data and ML! Learn about libraries like 'pandas'.", "https://www.freecodecamp.org/news/python-programming-course/"]
 let Python2 = ["Learn Python", "Frontendmasters Python Course", "This course teaches you how to make your own Python scripts!", "https://www.frontendmasters.com/courses/?q=python/learn-Python-in-15-hours/"]
-let Python3 = ["Learn Python", "w3schools Python Course", "Learn Python through functional examples and scripts", "https://www.w3schools.com/python/"]
-let Java = ["Learn Java", "FreeCodeCamp Java Course", "Java is a coding language that can run on any platform!", "https://www.freecodecamp.org/news/learn-java-free-java-courses-for-beginners/"]
+let Python3 = ["Learn Python", "w3schools Python Course", "Learn Python through functional examples and scripts.", "https://www.w3schools.com/python/"]
+let Java = ["Learn Java", "FreeCodeCamp Java Course", "Learn the versatile coding language Java in this YouTube series!", "https://www.youtube.com/watch?v=eIrMbAQSU34"]
 let courses = [Basics, HTML1, HTML2, CSS1, CSS2, JavaScript, JavaScript2, JavaScript3, Python, Python2, Python3, Java] 
 
 // Code so that all Learn courses are displayed when the page is loaded

@@ -56,11 +56,13 @@
       <!-- Top Section -->
         <div class=" top-section container-fluid">
             <h1 class="xlarge-font" >LearnCodeEmpower</h1>
+            <img src="img/mimi-thian-ZKBzlifgkgw-unsplash.jpg" alt="Photo by Mimi Thian on Unsplash" class="img-fluid" width="300">
+        
             <div class="text-typing">
                 <span id="typed"></span>
                 <!-- <p id="typing-text">Develop your skills, develop your future </p> -->
             </div>
-            <img src="img/mimi-thian-ZKBzlifgkgw-unsplash.jpg" alt="Photo by Mimi Thian on Unsplash" width="300" height=auto>
+            <!-- <img src="img/mimi-thian-ZKBzlifgkgw-unsplash.jpg" alt="Photo by Mimi Thian on Unsplash" class="img-fluid" width="300"> -->
         </div>
 
         <!-- Marketing message -->
@@ -182,72 +184,73 @@
         <div class="podcast container ">
             <br>
             <br>
-            <div class="row">
-                
-                <div class="col-6">
-                    <div class="slideshow-container">
-                        <div>
-                        <div class=mySlides>
-                        <p><iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="500" style="width:100%;max-width:400px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src=https://embed.podcasts.apple.com/us/podcast/accenture-ai-leaders-podcast/id1538658398></iframe></p>
-                        </div>
-                    
-                        <div class="mySlides">
-                        <p><iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="500" style="width:100%;max-width:400px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/aws-conversations-with-leaders/id1482820161"></iframe></p>
-                        </div>
-                    
-                        <div class="mySlides">
-                        <p><iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="500" style="width:100%;max-width:400x;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/the-ai-health-podcast/id1542731019"></iframe></p>
-                        </div>
-
-                        
-                        <a class="prev" onclick="plusSlides(-1)">❮</a>
-                        <a class="next" onclick="plusSlides(1)">❯</a>
-                        
-
-                        </div>
-                        </div>
-                        <div class="dot-container">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                        </div>
-                    
-                        <script>
-                        var slideIndex = 1;
-                        showSlides(slideIndex);
-                    
-                        function plusSlides(n) {
-                        showSlides(slideIndex += n);
-                        }
-                    
-                        function currentSlide(n) {
-                        showSlides(slideIndex = n);
-                        }
-                    
-                        function showSlides(n) {
-                        var i;
-                        var slides = document.getElementsByClassName("mySlides");
-                        var dots = document.getElementsByClassName("dot");
-                        if (n > slides.length) {slideIndex = 1}    
-                        if (n < 1) {slideIndex = slides.length}
-                        for (i = 0; i < slides.length; i++) {
-                            slides[i].style.display = "none";  
-                        }
-                        for (i = 0; i < dots.length; i++) {
-                            dots[i].className = dots[i].className.replace(" active", "");
-                        }
-                        slides[slideIndex-1].style.display = "block";  
-                        dots[slideIndex-1].className += " active";
-                        }
-                        </script>
-                </div>
-                <div class="col-6">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
                     <h2>Listen to what other people are saying about the future of tech<span class="text-muted">
                         
                     <p>Take time to learn about new things everyday</p></span></h2>
                     
                     <p>Stay ahead of the curve and be informed about the latest tools and techniques in your field. Tech podcasts are a valuable resource for women looking to stay informed, connect with others, and grow in their careers.</p>
                 </div>
+                <div class="col">
+                    <div class="slideshow-container">
+                        
+                            <div class=mySlides>
+                                <p><iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="500" style="width:100%;max-width:400px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src=https://embed.podcasts.apple.com/us/podcast/accenture-ai-leaders-podcast/id1538658398></iframe></p>
+                            </div>
+                        
+                            <div class="mySlides">
+                                <p><iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="500" style="width:100%;max-width:400px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/aws-conversations-with-leaders/id1482820161"></iframe></p>
+                            </div>
+                        
+                            <div class="mySlides">
+                                <p><iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="500" style="width:100%;max-width:400x;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/the-ai-health-podcast/id1542731019"></iframe></p>
+                            </div>
+
+                        
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+                        
+
+                        
+                    
+                        <div class="dot-container">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    
+                        <script>
+                            var slideIndex = 1;
+                            showSlides(slideIndex);
+                        
+                            function plusSlides(n) {
+                            showSlides(slideIndex += n);
+                            }
+                        
+                            function currentSlide(n) {
+                            showSlides(slideIndex = n);
+                            }
+                        
+                            function showSlides(n) {
+                            var i;
+                            var slides = document.getElementsByClassName("mySlides");
+                            var dots = document.getElementsByClassName("dot");
+                            if (n > slides.length) {slideIndex = 1}    
+                            if (n < 1) {slideIndex = slides.length}
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";  
+                            }
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex-1].style.display = "block";  
+                            dots[slideIndex-1].className += " active";
+                            }
+                        </script>
+                    </div>
+                </div>
+                
             </div>
 
         </div>

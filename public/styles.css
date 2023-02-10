@@ -8,7 +8,9 @@
 }
 
 .top-section {
-  padding: 75px;
+  padding-top: 75px;
+  padding-right: 0;
+  padding-left: 0;
   text-align: center;
   background: #97DECE;
   color: rgb(21, 18, 18);
@@ -83,6 +85,13 @@
     /* top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); */
+}
+
+main > .slideshow-container {
+  background-color: #f6f6f8;
+  border-color: black;
+  padding-bottom: 15px;
+  display: flex;
 }
 
 /* Used throughout */
