@@ -61,6 +61,16 @@
   }
 }
 
+#typed {
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  #typed {
+    font-size: 20px;
+  }
+}
+
 .iframe-bottom {  
     position: absolute;    
     /* top: 50%;
