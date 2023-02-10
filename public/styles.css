@@ -2,6 +2,11 @@
 
 /* Styling for Home page elements */
 
+.card-footer {
+  background: transparent;
+  border-top: 0px;
+}
+
 .top-section {
   padding: 75px;
   text-align: center;
