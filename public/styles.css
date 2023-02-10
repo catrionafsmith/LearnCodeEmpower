@@ -94,6 +94,17 @@ main > .slideshow-container {
   display: flex;
 }
 
+.fw-normal {
+  font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .fw-normal {
+    font-size: 1rem;
+    text-decoration: underline;
+  }
+}
+
 /* Used throughout */
 body {
   font-family: 'Montserrat', sans-serif;
