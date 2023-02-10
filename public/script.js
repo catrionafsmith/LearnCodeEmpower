@@ -212,3 +212,5 @@ function clearCards() {
         cardContainer.removeChild(cardContainer.firstChild);
     }
 }
+
+
