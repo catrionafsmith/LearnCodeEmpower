@@ -22,36 +22,50 @@
 }
 
 .text-typing {
-             
   display: flex;
   align-items: center;
   justify-content: center;
- 
-}
-.text-typing {
   padding: 20px 30px;
   font-size: 30px;
   font-family: 'Montserrat', sans-serif;
   border-radius: 20px;
 }
-.text-typing p {
-  margin: 0px;
-  white-space: nowrap;
+
+#typing-text {
   overflow: hidden;
-  animation: typing 5.5s steps(40, end),
-blink-caret .75s step-end infinite
+  white-space: nowrap;
+  width: 100%;
+  animation: type 5s steps(40, end) forwards;
 }
-@keyframes typing {
-  0% { width:0% }
-  100% { width:100% }
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
-@keyframes blink {
-  0%,100% {
-    border-right:2px solid transparent;
+
+@media (max-width: 767px) {
+
+  .text-typing {
+    font-size: 20px;
   }
-  50% {
-    border-right:2px solid #222;
+  
+  #typing-text {
+    width: auto;
+    white-space: nowrap;
+    overflow: visible;
+    animation: none;
   }
+}
+
+.iframe-bottom {  
+    position: absolute;    
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
 }
 
 /* Used throughout */
