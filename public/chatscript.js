@@ -9,7 +9,7 @@ $("#terminal").terminal(async function (command, terminal) {
         const response = await fetch(
             `https://api.openai.com/v1/completions`,
             {
-                body: JSON.stringify({"model": "text-davinci-003", "prompt": prompt, "temperature": 0.86, "max_tokens": 256}),
+                body: JSON.stringify({"model": "gpt-3.5-turbo-instruct", "prompt": prompt, "temperature": 0.86, "max_tokens": 256}),
                 method: "POST",
                 headers: {
                     "content-type": "application/json",
